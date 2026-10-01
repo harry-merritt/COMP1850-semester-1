@@ -14,3 +14,15 @@
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
+
+num1 = input("Please enter a number ")
+if not(num1.isdigit()):
+    print("That is not a number")
+    quit()
+
+num2 = input("Please enter another number ")
+if not(num2.isdigit()):
+    print("That is not a number")
+    quit()
+
+print(int(num1) * int(num2))
