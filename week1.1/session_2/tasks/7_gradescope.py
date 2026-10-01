@@ -16,12 +16,12 @@
 # You will get some feedback - ensure you are passing the tests!
 
 num1 = input("Please enter a number ")
-if not(num1.isdigit()):
+if not(num1.lstrip("-").isdigit()):
     print("That is not a number")
     quit()
 
 num2 = input("Please enter another number ")
-if not(num2.isdigit()):
+if not(num2.lstrip("-").isdigit()):
     print("That is not a number")
     quit()
 
