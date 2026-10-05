@@ -3,6 +3,7 @@
 import util, sys
 
 numbers = util.read_numbers()
+numbers.sort()
 
 if len(numbers) == 0:
     sys.exit("Error: no numbers provided")
