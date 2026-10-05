@@ -16,11 +16,11 @@ meanavg = sum(numbers) / length
 
 if length % 2 == 0:
     # Even case
-    median = numbers[length / 2] + numbers[(length / 2) + 1]
+    median = numbers[int(length / 2) - 1] + numbers[int((length / 2) + 1) - 1]
     median = median / 2
 else:
     # Odd case
-    median = numbers[(length + 1) / 2]
+    median = numbers[int((length + 1) / 2) - 1]
 
 print(f"Minimum = {minimum}")
 print(f"Maximum = {maximum}")
