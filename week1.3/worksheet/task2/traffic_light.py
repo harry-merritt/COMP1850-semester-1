@@ -12,6 +12,27 @@ maxtime = int(input())  # read an integer number of steps (>0)
 state = "red"
 
 print(f"Time {systime:03} State {state}")
+remaining = 4
+
+
+while systime < maxtime:
+    systime += 1
+    remaining -= 1
+    if remaining > 0:
+        print(f"Time {systime:03} State {state}")
+    else:
+        match state: # Gross, but the best solution I can think of
+            case "red":
+                state = "red_amber"
+            case "red_amber":
+                state = "green"
+            case "green":
+                state = "amber"
+            case "amber":
+                state = "red"
+        remaining = states[state]
+        print(f"Time {systime:03} State {state}")
+
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
 
