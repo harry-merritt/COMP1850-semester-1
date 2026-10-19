@@ -6,10 +6,14 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Harry Merritt
 """
 
 def currency_converter(amount, from_currency, to_currency):
+    '''
+    Takes an amount of currency and a currency and converts to another currency. Supported currencies are GBP, CNY, PHP and INR.
+    '''
+
 
     conversion_rate = {
         'GBP': {'CNY': 9.24, 'PHP': 75.00, 'INR': 109.06},
@@ -18,9 +22,12 @@ def currency_converter(amount, from_currency, to_currency):
         'INR': {'PHP': 0.69, 'CNY': 0.09, 'GBP': 0.01}
     }
 
-    # your code here
+    if amount < 0:
+        return 0.0
 
-    return None
+    amount = amount * conversion_rate[from_currency][to_currency]
+
+    return amount
 
 # Submit only this file currency_converter.py with the completed function.
 
