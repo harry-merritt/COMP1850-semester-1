@@ -9,7 +9,7 @@
     Name: Harry Merritt
 """
 
-def currency_converter(amount, from_currency, to_currency):
+def currency_converter(amount : float, from_currency : str, to_currency : str) -> float:
     '''
     Takes an amount of currency and a currency and converts to another currency. Supported currencies are GBP, CNY, PHP and INR.
     '''
