@@ -15,3 +15,8 @@
 # story.txt - 290
 # story2.txt - 326
 # glasses.txt - 210
+
+path = input("Please ente filepath: ")
+
+with open(path) as f:
+    print(len(f.read().split()))

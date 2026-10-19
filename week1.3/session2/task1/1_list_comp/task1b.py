@@ -15,3 +15,6 @@ print(newval)
 
 # write the list comprehension equivalent to the `for` loop
 
+newval = [i * (2 - (i % 2)) for i in values]
+
+print(newval)
