@@ -4,6 +4,10 @@
 # your task is to complete the function based on the description
 
 
+from string import digits
+from unicodedata import digit
+
+
 def digits_sum(number):
     """
     This recursive function calculates the sum of digits of a given positive
@@ -19,6 +23,12 @@ def digits_sum(number):
     """
     # complete your code here
     # base case
+
+    number = str(number)
+    if len(number) == 1:
+        return int(number)
+    else:
+        return int(number[0]) + digits_sum(number[1:])
 
     # recursive case
 

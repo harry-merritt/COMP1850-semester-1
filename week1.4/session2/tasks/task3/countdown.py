@@ -1,4 +1,4 @@
-# Week 4, Session 2: 
+# Week 4, Session 2:
 
 # Given incomplete recursive function countdown with a docstring.
 # Your task is to complete the function based on the details in the docstring.
@@ -17,11 +17,16 @@ def countdown(n):
     # Complete your code here
     # base case
 
-    # recursive case
+    if n == 0:
+        print(0)
+    else:
+        print(n)
+        countdown(n-1)
+    #     # recursive case
 
 
 # check if correct output is produced
-countdown(30)    # 30 ... 0 (Note: each number is printed in a separate line)
+countdown(30)   # 30 ... 0 (Note: each number is printed in a separate line)
 countdown(5)     # 5 ... 0  (Note: each number in printed in a separate line)
 
 
