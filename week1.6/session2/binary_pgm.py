@@ -32,13 +32,3 @@ class Binary_Image(Image):
 
     def write_pgm_binary(self, filename):
         pass
-
-
-
-
-
-
-
-image = Image.read(sys.argv[1])
-bimage = Binary_Image.from_image(image)
-print(f"{bimage.__dict__=}")
