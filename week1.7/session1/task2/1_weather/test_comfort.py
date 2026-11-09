@@ -1,4 +1,4 @@
-# Week 1.7, Session 1: Task 2 - unit test for comfort_level() 
+# Week 1.7, Session 1: Task 2 - unit test for comfort_level()
 
 # Fill in the blank spaces in the calls to comfort_level() below, using
 # the values you've chosen for testing the function
@@ -8,10 +8,13 @@
 from weather import comfort_level
 
 def test_cold():
-    assert comfort_level(    ) == "COLD"
-    assert comfort_level(    ) == "COLD"
+    assert comfort_level(0) == "COLD"
+    assert comfort_level(15.0) == "COLD"
 
 def test_hot():
-    assert comfort_level(    ) == "HOT"
-    assert comfort_level(    ) == "HOT"
-    
+    assert comfort_level(26.0) == "HOT"
+    assert comfort_level(999999999999999999) == "HOT"
+
+def test_ok():
+    assert comfort_level(25.0) == "OK"
+    assert comfort_level(20.0) == "OK"
