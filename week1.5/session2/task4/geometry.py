@@ -75,4 +75,4 @@ class Circle:
     # Implement your __contains__() method here
 
     def __contains__(self, point : Point):
-        return (point.distance_to(self.centre) <= self.radius)
+        return (point.distance_to(self.centre) <= self.radius) # If distance from the point is less than the radius, then it falls inside the circle.

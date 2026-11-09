@@ -33,7 +33,7 @@ class Point:
 
     # Implement a __str__() method here
     def __str__(self) -> str:
-        return f"({self.x},{self.y})"
+        return f"({self.x},{self.y})" # Prints coordinates of point in a nice format
 
 
 class Circle:
